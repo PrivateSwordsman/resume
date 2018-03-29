@@ -3,6 +3,11 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
+
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
@@ -10,6 +15,17 @@
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
+
+\Large{
+  \begin{tabu}{ c l r }
+  
+   \multirow{3}{1in}{\includegraphics[width=0.88in]{avatar}} & \scshape{徐泽凡} \\
+    &\\ 
+    & \email{crossoverxzf@qq.com}  \\
+    &\\
+    & \phone{(+86) 185-0295-1598}
+  \end{tabu}
+}
 
 \name{徐泽凡}
 
